@@ -62,8 +62,10 @@
         secondNodes[i].style.color = "green";
       }
       // 3.Select list items of class 'third' inside ol tag
-      const list = document.getElementsByTagName("ol")[0];
-      list.getElementsByTagName("li")[0].style.color = "Purple";
+      // const list = document.getElementsByTagName("ol")[0];
+      // list.getElementsByTagName("li")[0].style.color = "Purple";
+      const list = document.querySelectorAll("ol li")[2];
+      list.style.color = "Purple";
 
       // 4.Give the section with id 'container' the text 'Hi from container'
       let containerMessage = () => {
